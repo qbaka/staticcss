@@ -57,7 +57,8 @@ Usage
     var staticcss = require('staticcss');
     
     /**
-     * If youdon't use external CSS files and declare all styles in <style> block in      * HTML you can just pass html code to translate
+     * If youdon't use external CSS files and declare all styles in <style> block in      
+     * HTML you can just pass html code to translate
      */
     var result = staticcss.apply({
         html: '<div>sample html</div>'
