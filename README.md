@@ -42,8 +42,8 @@ Features
 
  - Full CSS3 support including
      - Attributes matching, like `[attr=value]`, `[attr~=value]`, etc
-     - All pseudo elements like `:first-child`, `nth-element` and even `nth-of-type`. Dynamic pseudo elements (like `:visited`) blocks style since it is impossible to embed them into `style` attribute.
-     - Pseudo classes: `::before`, `::after`
+     - All pseudo classes like `:first-child`, `nth-element` and even `nth-of-type`. Dynamic pseudo classes (like `:visited`) blocks style since it is impossible to embed them into `style` attribute.
+     - Pseudo elements: `::before`, `::after`
  - `<style>` blocks inside HTML
  - External CSS files references in `<link>` tag
 
