@@ -6,7 +6,7 @@
       "email": "dg@qbaka.com"
     }
   ],
-  "homepage": "http://github.com/andris9/nodemailer",
+  "homepage": "https://github.com/qbaka/staticcss",
   "name": "staticcss",
   "keywords": [
     "css",
@@ -17,15 +17,15 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/andris9/nodemailer/blob/master/LICENSE"
+      "url": "http://github.com/qbaka/staticcss/blob/master/LICENSE"
     }
   ],
 
   "description": "Module that statically applies css to html and inlines all styles (full CSS3 support), useful for email",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
-    "url": "http://github.com/andris9/nodemailer.git"
+    "url": "https://github.com/qbaka/staticcss.git"
   },
   "main": "./lib/index",
   "bin": {
