@@ -1,0 +1,49 @@
+{
+  "author": "Daniil Gitelson",
+  "maintainers": [
+    {
+      "name": "daniil",
+      "email": "dg@qbaka.com"
+    }
+  ],
+  "homepage": "http://github.com/andris9/nodemailer",
+  "name": "staticcss",
+  "keywords": [
+    "css",
+    "html",
+    "mail",
+    "email"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/andris9/nodemailer/blob/master/LICENSE"
+    }
+  ],
+
+  "description": "Module that statically applies css to html and inlines all styles (full CSS3 support), useful for email",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/andris9/nodemailer.git"
+  },
+  "main": "./lib/index",
+  "bin": {
+    "cssapply": "./bin/cssapply"
+  },
+  "dependencies": {
+    "css-parse": ">= 1.7.0",
+    "htmlparser2": ">= 3.4.0",
+    "optimist": "0.6.*"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "devDependencies": {
+    "mocha": ">= 1.17.0"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=0.6.0"
+  }
+}

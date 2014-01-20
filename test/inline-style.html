@@ -1,0 +1,24 @@
+<style>
+	.a {
+		color: red;
+	}
+	.b {
+		color: black;
+	}
+	div:first-child>span {
+		color: yellow;
+	}
+
+	div:last-of-type {
+		color: blue;
+	}
+</style>
+<div>
+	<span>1</span>
+	<div class="a">
+	<span>2</span>
+	</div>
+	<div class="a b">
+		3
+	</div>
+</div>

@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var path = require('path');
+var staticcss = require('../lib');
+var optimist= require('optimist')
+  .usage('Usage: $0 [path to html]')
+  .describe('path', 'Path to CSS files rerenced in <link> tags in html, directory if html default')
+  .describe('preserveclass', 'Preseve class attribute for elements')
+  .boolean('preserveclass');
+
+var argv = optimist.argv;
+if (argv._.length != 1) {
+	optimist.showHelp();
+	process.exit(1);
+}
+
+var htmlFile = argv._[0];
+if (!fs.existsSync(htmlFile)) {
+	console.error('No such file: ' + htmlFile);
+	process.exit(1);
+}
+var html = fs.readFileSync(htmlFile);
+var loader = new staticcss.CachedCssLoader({
+	root: argv.path || path.dirname(htmlFile)
+});
+
+try {
+	console.log(staticcss.apply({
+		html: html,
+		loader: loader,
+		preserveClass: argv.preserveclass
+	}));
+} catch(e) {
+	console.error('Error: ', e.message);
+}

@@ -1,0 +1,11 @@
+.a {
+	color: red;
+}
+.b {
+	color: black;
+}
+div:first-child>span {
+	color: yellow;
+}
+
+@import "test-extern-css-import.css";
